@@ -1,0 +1,526 @@
+_EXIT	stdlib.h	void _EXIT(int status);	이 함수는 호출한 스레드를 종료 시킨다. 인자 status는 호출한 스레드의 종료 값으로 시스템에 전달된다.
+_longjmp	setjmp.h	void _longjmp(jmp_buf env, int val);	비-지역 분기. 시그널 마스크를 조작할 수 없다는 제약을 제외하고, longjmp()와 setjmp() 함수와 동등하다.
+_tolower	ctype.h	int _tolower(int c); 	대문자를 소문자로 변환하는 함수
+_toupper	ctype.h	int _toupper(int c); 	소문자를 대문자로 변환하는 함수
+abort?	stdlib.h	void?abort(void);?	이 함수는 호출한 스레드에 SIGABRT 시그널을 발생시킨다. 시그널을 수신한 스레드는 수행이 종료된다.
+abs	stdlib.h	int abs( int i);	정수의 절대값을 반환한다. 이 함수는 정수 i의 절대값을 계산하여 반환하다.
+acos	math.h	double acos(double x);	아크 코사인 함수. acos함수는 x의 아크 코사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+acosf	math.h	float acosf(float x);	아크 코사인 함수. acos함수는 x의 아크 코사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+acosh	math.h	double acosh(double x);	역 쌍곡선 코사인 함수. acos함수는 인자값 x의 아크 코사인 주치(principal-value)를 계산한다.
+acoshf	math.h	float acoshf(float x);	역 쌍곡선 코사인 함수. acos함수는 인자값 x의 아크 코사인 주치(principal-value)를 계산한다.
+acoshl 	math.h	long double acoshl(long double x);	역 쌍곡선 코사인 함수. acos함수는 인자값 x의 아크 코사인 주치(principal-value)를 계산한다.
+acosl 	math.h	long double acosl(long double x);	아크 코사인 함수. acos함수는 x의 아크 코사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+asctime	time.h	char *asctime( const struct tm *timeptr);	날짜와 시간을 문자열로 변환한다. 이 함수는 timeptr이 지정하는 시간 값을 문자열로 변환하여 문자열을 반환한다.
+asctime_r	time.h	char *asctime_r( const struct tm *timeptr,  char *restrict buf);	날짜와 시간을 문자열로 변환한다. 이 함수는 timeptr이 지정하는 시간 값을 문자열로 변환하여 buf(최소 26 바이트)에 저장한다.
+asin	math.h	double asin(double x);	아크 사인 함수. asins함수는 x의 아크 사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+asinf	math.h	float asinf(float x);	아크 사인 함수. asins함수는 x의 아크 사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+asinh	math.h	double asinh(double x);	역 쌍곡선 사인 함수. asinh함수는 x의 역 쌍곡선 사인을 계산한다.
+asinhf	math.h	float asinhf(float x);	역 쌍곡선 사인 함수. asinh함수는 x의 역 쌍곡선 사인을 계산한다.
+asinhl 	math.h	long double asinhl(long double x);	역 쌍곡선 사인 함수. asinh함수는 x의 역 쌍곡선 사인을 계산한다.
+asinl 	math.h	long double asinl(long double x);	아크 사인 함수. asins함수는 x의 아크 사인 주치(principal-value)를 계산한다. x값은 [-1,1]의 범위 내에 있어야 한다.
+assert	assert.h	void assert(expression); 	expression이 FALSE을 계산하면 진단 메시지를 출력하여 논리적 오류를 찾는 함수
+atan	math.h	double atan(double x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atan2	math.h	double atan2(double y, double x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atan2f	math.h	float atan2f(float y, float x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atan2l 	math.h	long double atan2l(long double y, long double x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atanf	math.h	float atanf(float x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atanh	math.h	double atanh(double x);	역 쌍곡선 탄젠트 함수. atanh함수는 x의 역 쌍곡선 탄젠트를 계산한다.
+atanhf	math.h	float atanhf(float x);	역 쌍곡선 탄젠트 함수. atanh함수는 x의 역 쌍곡선 탄젠트를 계산한다.
+atanhl 	math.h	long double atanhl(long double x);	역 쌍곡선 탄젠트 함수. atanh함수는 x의 역 쌍곡선 탄젠트를 계산한다.
+atanl 	math.h	long double atanl(long double x);	아크 탄젠트 함수. atan함수는 x의 아크 탄젠트값 주치(principal-value)를 계산한다.
+atexit	stdlib.h	int atexit( void (* func)(void));	프로세스 종료시 실행될 함수를 등록한다.
+atof	stdlib.h	double atof( const char *str);	문자열을 배정밀도 수로 변환한다.
+atoi	stdlib.h	int atoi( const char *str);	문자열을 정수로 변환한다.
+atol	stdlib.h	long atol( const char * str);	문자열을 long형 정수로 변환.
+atoll	stdlib.h	long long atoll( const char * nptr);	문자열을 long형 정수로 변환.
+bsearch	stdlib.h	void * bsearch( const void *key,  const void *base,  size_t nel,  size_t width ,  int (*compar) ( const void *,  const void * ));	정렬된 테이블의 이진 검색. 이 함수는 base가 가리키는 최초의 요소에서 key가 가리키는 객체와 매칭되는 요소에 대해 nel 개를 객체의 배열을 검색 한다. 배열에서의 각 요소의 크기는 width에 의해 정의된다. 
+btowc	wchar.h	wint_t btowc( int c);	한 바이트 문자를 확장 문자로 변환한다.
+cabs	complex.h	double cabs(double _Complex left);	복소수 left의 절대값을 계산하는 함수
+cabsf	complex.h	float cabsf(float _Complex left);	복소수 left의 절대값을 계산하는 함수
+cabsl	complex.h	long double cabsl(long double _Complex left);	복소수 left의 절대값을 계산하는 함수
+cacos	complex.h	double _Complex cacos(double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 코사인을 계산하는 함수
+cacosf	complex.h	float _Complex cacosf(float _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 코사인을 계산하는 함수
+cacosh	complex.h	double _Complex cacosh(double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 코사인을 계산하는 함수
+cacoshf	complex.h	float _Complex cacoshf(float _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 코사인을 계산하는 함수
+cacoshl	complex.h	long double _Complex cacoshl(long double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 코사인을 계산하는 함수
+cacosl	complex.h	long double _Complex cacosl(long double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 코사인을 계산하는 함수
+calloc	stdlib.h	void * calloc( size_t nelem,  size_t elsize);	메모리 할당기. 이 함수는 배열에서 각 요소들의 크기가 elsize 바이트인 nelem 개의 사용되지 않는 영역을 할당한다. 그 영역의 모든 비트들은 0으로 초기화 된다.
+carg	complex.h	double carg(double _Complex left);	음의 실제 축을 중심으로 자른 자른 지점 left를 계산하는 함수
+cargf	complex.h	float cargf(float _Complex left);	음의 실제 축을 중심으로 자른 자른 지점 left를 계산하는 함수
+cargl	complex.h	long double cargl(long double _Complex left);	음의 실제 축을 중심으로 자른 자른 지점 left를 계산하는 함수
+casin	complex.h	double _Complex casin(double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 사인을 계산하는 함수
+casinf	complex.h	float _Complex casinf(float _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 사인을 계산하는 함수
+casinh	complex.h	double _Complex casinh(double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 사인을 계산하는 함수
+casinhf	complex.h	float _Complex casinhf(float _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 사인을 계산하는 함수
+casinhl	complex.h	long double _Complex casinhl(long double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 쌍곡선 사인을 계산하는 함수
+casinl	complex.h	long double _Complex casinl(long double _Complex left);	실제 축을 중심으로 -1에서 +1 사이의 바깥쪽을 자른 지점 left의 복소 아크 사인을 계산하는 함수
+catan	complex.h	double _Complex catan(double _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 탄젠트를 계산하는 함수
+catanf	complex.h	float _Complex catanf(float _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 탄젠트를 계산하는 함수
+catanh	complex.h	double _Complex catanh(double _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 쌍곡선 탄젠트를 계산하는 함수
+catanhf	complex.h	float _Complex catanhf(float _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 쌍곡선 탄젠트를 계산하는 함수
+catanhl	complex.h	long double _Complex catanhl(long double _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 쌍곡선 탄젠트를 계산하는 함수
+catanl	complex.h	long double _Complex catanl(long double _Complex left);	가상 축을 중심으로 -i 에서 +i 사이의 바깥쪽을 자른 지점 z의 복소 아크 탄젠트를 계산하는 함수
+cbrt	math.h	double cbrt(double x);	큐브 루트 함수. cbrt함수는 x의 실제 큐브 루트를 계산 한다.
+cbrtf	math.h	float cbrtf(float x);	큐브 루트 함수. cbrt함수는 x의 실제 큐브 루트를 계산 한다.
+cbrtl 	math.h	long double cbrtl(long double x);	큐브 루트 함수. cbrt함수는 x의 실제 큐브 루트를 계산 한다.
+ccos	complex.h	double _Complex ccos(double _Complex left);	복소수 left의 복소 코사인을 계산하는 함수
+ccosf	complex.h	float _Complex ccosf(float _Complex left);	복소수 left의 복소 코사인을 계산하는 함수
+ccosh	complex.h	double _Complex ccosh(double _Complex left);	복소수 left의 복소 쌍곡선 코사인을 계산하는 함수
+ccoshf	complex.h	float _Complex ccoshf(float _Complex left);	복소수 left의 복소 쌍곡선 코사인을 계산하는 함수
+ccoshl	complex.h	long double _Complex ccoshl(long double _Complex left);	복소수 left의 복소 쌍곡선 코사인을 계산하는 함수
+ccosl	complex.h	long double _Complex ccosl(long double _Complex left);	복소수 left의 복소 코사인을 계산하는 함수
+ceil	math.h	double ceil(double x);	소수점 올림 함수. ceil함수는 x가 부동소수 일때 올림 하여 정수를 반환 한다.
+ceilf	math.h	float ceilf(float x);	소수점 올림 함수. ceil함수는 x가 부동소수 일때 올림 하여 정수를 반환 한다.
+ceill 	math.h	long double ceill(long double x);	소수점 올림 함수. ceil함수는 x가 부동소수 일때 올림 하여 정수를 반환 한다.
+cexp	complex.h	double _Complex cexp(double _Complex left);	복소수 left의 복소 지수를 계산하는 함수
+cexpf	complex.h	float _Complex cexpf(float _Complex left);	복소수 left의 복소 지수를 계산하는 함수
+cexpl	complex.h	long double _Complex cexpl(long double _Complex left);	복소수 left의 복소 지수를 계산하는 함수
+cimag	complex.h	double cimag(double _Complex left);	복소수 left의 복소 가상 부분을 계산하는 함수
+cimagf	complex.h	float cimagf(float _Complex left);	복소수 left의 복소 가상 부분을 계산하는 함수
+cimagl	complex.h	long double cimagl(long double _Complex left);	복소수 left의 복소 가상 부분을 계산하는 함수
+clearerr	stdio.h	void clearerr( FILE *fp	이 함수는 지정된?fp의 파일의 끝과 오류 표시자를 초기화 한다.
+clock_getres	time.h	int clock_getres( clockid_t clock_id,  struct timespec *res);	클록의 분해능력을 얻는다. 이 함수는 지정된 클록 clock_id의 클록 분해능력 값을 얻는다.
+clock_gettime	time.h	int clock_gettime( clockid_t clock_id,  struct timespec *tp);	클록의 분해능력을 얻는다. 이 함수는 클록 clock_id의 현재 시간을 tp에 저장한다.
+clock_nanosleep	time.h	int clock_nanosleep( clockid_t clock_id,  int flags,  const struct timespec *rqtp,  struct timespec *rmtp);	고해상도 대기를 수행한다. 이 함수는 호출한 스레드의 실행을 요청된 대기 시간에 따라 다음과 같이 정지 시킨다.
+clock_settime	time.h	int clock_settime( clockid_t clock_id,  const struct timespec *tp);	클록을 설정한다. 이 함수는 호출한 스레드의 실행을 요청된 대기 시간에 따라 다음과 같이 정지 시킨다.
+clog	complex.h	double _Complex clog(double _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 자연 로그를 계산하는 함수
+clogf	complex.h	float _Complex clogf(float _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 자연 로그를 계산하는 함수
+clogl	complex.h	long double _Complex clogl(long double _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 자연 로그를 계산하는 함수
+conj	complex.h	double _Complex conj(double _Complex left);	가상 영역의 반전되는 부호에 의한 left의 복소 켤레를 계산하는 함수
+conjf	complex.h	float _Complex conjf(float _Complex left);	가상 영역의 반전되는 부호에 의한 left의 복소 켤레를 계산하는 함수
+conjl	complex.h	long double _Complex conjl(long double _Complex left);	가상 영역의 반전되는 부호에 의한 left의 복소 켤레를 계산하는 함수
+copysign	math.h	double copysign(double x, double y);	부호 복사 함수. copysign함수는 인자값y의 부호를 인자값x에 적용한다.
+copysignf	math.h	float copysignf(float x, float y);	부호 복사 함수. copysign함수는 인자값y의 부호를 인자값x에 적용한다.
+copysignl 	math.h	long double copysignl(long double x, long double y);	부호 복사 함수. copysign함수는 인자값y의 부호를 인자값x에 적용한다.
+cos	math.h	double cos(double x);	코사인 함수. cos함수는 라디안 단위의 인자값 x로 코사인 값을 계산 한다.
+cosf	math.h	float cosf(float x);	코사인 함수. cos함수는 라디안 단위의 인자값 x로 코사인 값을 계산 한다.
+cosh	math.h	double cosh(double x);	쌍곡선 코사인 함수. cosh함수는 인자값 x의 쌍곡선 코사인 값을 계산 한다. 이는 수학적으로 다음과 같이 정의 된다. cosh(x) = (exp(x) + exp(-x)) / 2
+coshf	math.h	float coshf(float x);	쌍곡선 코사인 함수. cosh함수는 인자값 x의 쌍곡선 코사인 값을 계산 한다. 이는 수학적으로 다음과 같이 정의 된다. cosh(x) = (exp(x) + exp(-x)) / 3
+coshl 	math.h	long double coshl(long double x);	쌍곡선 코사인 함수. cosh함수는 인자값 x의 쌍곡선 코사인 값을 계산 한다. 이는 수학적으로 다음과 같이 정의 된다. cosh(x) = (exp(x) + exp(-x)) / 4
+cosl 	math.h	long double cosl(long double x);	코사인 함수. cos함수는 라디안 단위의 인자값 x로 코사인 값을 계산 한다.
+cpow	complex.h	double _Complex cpow(double _Complex left, double _Complex right);	x의 y승 제곱의 복소 거듭제곱을 계산하는 함수
+cpowf	complex.h	float _Complex cpowf(float _Complex left, float _Complex right);	x의 y승 제곱의 복소 거듭제곱을 계산하는 함수
+cpowl	complex.h	long double _Complex cpowl(long double _Complex left, long double _Complex right);	x의 y승 제곱의 복소 거듭제곱을 계산하는 함수
+cproj	complex.h	double _Complex cproj(double _Complex left);	리만 구 상의 left의 추정을 계산하는 함수
+cprojf	complex.h	float _Complex cprojf(float _Complex left);	리만 구 상의 left의 추정을 계산하는 함수
+cprojl	complex.h	long double _Complex cprojl(long double _Complex left);	리만 구 상의 left의 추정을 계산하는 함수
+creal	complex.h	double creal(double _Complex left);	left의 실제 영역을 계산하는 함수
+crealf	complex.h	float crealf(float _Complex left);	left의 실제 영역을 계산하는 함수
+creall	complex.h	long double creall(long double _Complex left);	left의 실제 영역을 계산하는 함수
+csin	complex.h	double _Complex csin(double _Complex left);	left의 복소 사인을 계산하는 함수
+csinf	complex.h	float _Complex csinf(float _Complex left);	left의 복소 사인을 계산하는 함수
+csinh	complex.h	double _Complex csinh(double _Complex left);	left의 복소 쌍곡선 사인을 계산하는 함수
+csinhf	complex.h	float _Complex csinhf(float _Complex left);	left의 복소 쌍곡선 사인을 계산하는 함수
+csinhl	complex.h	long double _Complex csinhl(long double _Complex left);	left의 복소 쌍곡선 사인을 계산하는 함수
+csinl	complex.h	long double _Complex csinl(long double _Complex left);	left의 복소 사인을 계산하는 함수
+csqrt	complex.h	double _Complex csqrt(double _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 제곱근을 계산하는 함수
+csqrtf	complex.h	float _Complex csqrtf(float _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 제곱근을 계산하는 함수
+csqrtl	complex.h	long double _Complex csqrtl(long double _Complex left);	음의 실제 축을 중심으로 바깥쪽을 자른 지점 left의 복소 제곱근을 계산하는 함수
+ctan	complex.h	double _Complex ctan(double _Complex left);	left의 복소 탄젠트를 계산하는 함수
+ctanf	complex.h	float _Complex ctanf(float _Complex left);	left의 복소 탄젠트를 계산하는 함수
+ctanh	complex.h	double _Complex ctanh(double _Complex left);	left의 복소 쌍곡선 탄젠트를 계산하는 함수
+ctanhf	complex.h	float _Complex ctanhf(float _Complex left);	left의 복소 쌍곡선 탄젠트를 계산하는 함수
+ctanhl	complex.h	long double _Complex ctanhl(long double _Complex left);	left의 복소 쌍곡선 탄젠트를 계산하는 함수
+ctanl	complex.h	long double _Complex ctanl(long double _Complex left);	left의 복소 탄젠트를 계산하는 함수
+ctime	time.h	char *ctime( const time_t *timer);	시간 값을 문자열로 변환한다. 이 함수는 시간 값 timer을 문자열로 변환하여 문자열을 반환한다.
+ctime_r	time.h	char *ctime_r(const time_t *timer,?char *buf);	시간 값을 문자열로 변환한다. 이 함수는 시간 값 timer을 문자열로 변환하여 buf에 저장한다.
+difftime	time.h	double difftime( time_t time1,  time_t time2);	두 시간 값의 차를 계산한다. 이 함수는 시간 값의 차 time1 - time2을 계산한다.
+div	stdlib.h	div_t div( int numer,  int denom);	정수 나눗셈의 몫과 나머지 연산. 이 함수는 분자 numer를 분모 denom로 나눗셈 하여 몫과 나머지를 구한다. 만약 나눗셈이 정확하지 않다면 그 몫은 대수에 의한 몫보다 작은 정수가 된다.
+erf	math.h	double erf(double x);	오차 함수. erf함수는 다음과 같은 수식으로 x의 오차 함수를 반환 한다. erf(x) = 2/sqrt(pi) * 0부터 exp(-t*t)의x 적분 dt
+erfc	math.h	double erfc(double x);	오차 함수. erfc함수는 1.0 - erf(x)의 값을 계산한다. erfc함수는 x의 큰 값에 erf함수 대신 사용된다.
+erfcf	math.h	float erfcf(float x);	오차 함수. erfc함수는 1.1 - erf(x)의 값을 계산한다. erfc함수는 x의 큰 값에 erf함수 대신 사용된다.
+erfcl 	math.h	long double erfcl(long double x);	오차 함수. erfc함수는 1.2 - erf(x)의 값을 계산한다. erfc함수는 x의 큰 값에 erf함수 대신 사용된다.
+erff	math.h	float erff(float x);	오차 함수. erf함수는 다음과 같은 수식으로 x의 오차 함수를 반환 한다. erf(x) = 2/sqrt(pi) * 1부터 exp(-t*t)의x 적분 dt
+erfl 	math.h	long double erfl(long double x);	오차 함수. erf함수는 다음과 같은 수식으로 x의 오차 함수를 반환 한다. erf(x) = 2/sqrt(pi) * 2부터 exp(-t*t)의x 적분 dt
+exit	stdlib.h	void exit( int status);	이 함수는 호출한 스레드를 종료 시킨다. 인자?status은 호출한 스레드의 종료 값으로 시스템에 전달된다.
+exp	math.h	double exp(double x);	지수 함수. exp함수는 x의 지수를 계산한다.
+exp2	math.h	double exp2(double x);	base-2 지수 함수. 인자값x의 밑수가 2인 지수를 계산한다.
+exp2f	math.h	float exp2f(float x);	base-2 지수 함수. 인자값x의 밑수가 2인 지수를 계산한다.
+exp2l 	math.h	long double exp2l(long double x);	base-2 지수 함수. 인자값x의 밑수가 2인 지수를 계산한다.
+expf	math.h	float expf(float x);	지수 함수. exp함수는 x의 지수를 계산한다.
+expl 	math.h	long double expl(long double x);	지수 함수. exp함수는 x의 지수를 계산한다.
+expm1	math.h	double expm1(double x);	지수 계산 함수. 다음의 수식을 계산한다. e^x - 1.0
+expm1f	math.h	float expm1f(float x);	지수 계산 함수. 다음의 수식을 계산한다. e^x - 1.0
+expm1l 	math.h	long double expm1l(long double x);	지수 계산 함수. 다음의 수식을 계산한다. e^x - 1.0
+fabs	math.h	double fabs(double x);	절대값 함수. 인자값x의 절대값인 |x| 를 계산한다.
+fabsf	math.h	float fabsf(float x);	절대값 함수. 인자값x의 절대값인 |x| 를 계산한다.
+fabsl 	math.h	long double fabsl(long double x);	절대값 함수. 인자값x의 절대값인 |x| 를 계산한다.
+fclose	stdio.h	int?fclose(FILE *fp);	이 함수는 가리키고 있는 스트림을 내보내고 연결된 파일을 닫도록 한다. 스트림의 쓰여지지 않은채 저장되어 있는 데이터들은 파일에 쓰여진다. 읽지 않은 데이터들은 삭제 된다.
+fdim	math.h	double fdim(double x, double y);	양수 차이를 구하는 함수. 이 함수는 다음과 같은 계산을 수행한다. x  y 이면 x-y 값 반환. x 가 y 보다 작거나 같다면 0 반환.
+fdimf	math.h	float fdimf(float x, float y);	양수 차이를 구하는 함수. 이 함수는 다음과 같은 계산을 수행한다. x  y 이면 x-y 값 반환. x 가 y 보다 작거나 같다면 1 반환.
+fdiml 	math.h	long double fdiml(long double x, long double y);	양수 차이를 구하는 함수. 이 함수는 다음과 같은 계산을 수행한다. x  y 이면 x-y 값 반환. x 가 y 보다 작거나 같다면 2 반환.
+fdopen	stdio.h	FILE *fdopen( int fd, const char *mode);	이 함수는 스트림과 파일 기술자를 연결한다.
+feclearexcept	fenv.h	int feclearexcept(int except);	부동소수 예외 플래그를 제거하는 함수
+fegetenv	fenv.h	int fegetenv(fenv_t *penv);	현재 부동 소수 환경을 얻는 함수
+fegetexceptflag	fenv.h	int fegetexceptflag(fexcept_t *pflag, int except);	부동 소수 상태 플래그를 얻는 함수
+fegetround	fenv.h	int fegetround(void);	부동 소수의 반올림 모드를 얻는 함수
+feholdexcept	fenv.h	int feholdexcept(fenv_t *penv);	현재 부동 소수 환경을 저장하는 함수
+feof	stdio.h	int?feof(FILE *fp);	이 함수는?fp?인자값의 스트림을 가리키는 파일의 끝 표시자를 테스트 한다.
+feraiseexcept	fenv.h	int feraiseexcept(int except);	부동 소수 예외를 발생시키는 함수
+ferror	stdio.h	int?ferror(FILE *fp);	이 함수는?fp인자값이 가리키는 스트림의 오류 표시자를 테스트한다.
+fesetenv	fenv.h	int fesetenv(const fenv_t *penv);	현재 부동 소수 환경을 설정하는 함수
+fesetexceptflag	fenv.h	int fesetexceptflag(const fexcept_t *pflag, int except);	부동 소수 상태 플래그를 설정하는 함수
+fesetround	fenv.h	int fesetround(int mode);	부동 소수 연산의 반올림 모드를 설정하는 함수
+fetestexcept	fenv.h	int fetestexcept(int except);	부동 소수 플래그를 검사하는 함수
+feupdateenv	fenv.h	int feupdateenv(const fenv_t *penv);	부동 소수 환경을 갱신하는 함수
+fflush	stdio.h	int?fflush(FILE *fp);	만약?fp?포인터가 가장 최근 작업이 입력이 아닌 출력 스트림 또는 업데이트 스트림을 가리킬 경우,?fflush()?함수는 그 스트림에 대해 기록되지 않은 데이터를 파일에 기록하고 기초 파일의?st_ctime?와?st_mtime?에 업데이트 표시를 한다.
+fgetc	stdio.h	int?fgetc(FILE *fp);	fp?인자값이 가리키는 입력스트림에 대한 파일 끝 표시자가 설정되지 않고 다음 바이트가 존재 하면, 이 함수는?unsigned char?형의 문자가?int형으로 바뀐 다음 바이트의 값을 구하고, 스트림이 파일 위치 표시자를 전진 한다(설정되어 있다면).
+fgetpos	stdio.h	int?fgetpos(FILE *fp,?fpos_t *pos);	이 함수는 fp 인자값이 가리키는 스트림의 파일 위치 표시자의 현재 값을pos 인자값이 가리키는 오브젝트에 저장한다. 저장된 값은 fgetpos() 호출 스트림을 그 위치로 재배치 하기 위해 fsetpos()에 의해 사용 가능한 미지정된 정보를 포함하고 있는다 .
+fgets	stdio.h	char *fgets( char *buf, int n,FILE *fp);	이 함수는 n-1 수 만큼 바이트를 읽거나, 또는 newline 문자를 읽거나 또는 EOF를 알리는 조건의 바이트를 읽을 때 까지 fp가 가리키는 스트림으로 부터 바이트를 읽어 buf에 저장한다. 읽어들인 문자열은 NULL 바이트로 종료 된다.
+fgetwc	wchar.h	wint_t fgetwc( FILE *stream);	한 바이트 문자를 확장 문자로 변환한다.
+fgetws	wchar.h	wchar_t *fgetws( wchar_t *restrict buf,  int n,  FILE *restrict stream);	스트림에서 확장 문자를 읽는다.
+fileno	stdio.h	int fileno( FILE *fp);	이 함수는 fp인자값이 가리키는 스트림과 연결된 정수 파일 기술자를 반환한다.
+flockfile	stdio.h	void?flockfile(FILE *fp);	이 함수는 스트림 오브젝트에 대한 명시적인 애플리케이션 레벨의 잠금 기능을 제공한다. 이 함수는 단위로서 실행될 입력과 출력 시퀀스를 일정한 순서로 배열하는 스레드에서 사용할 수 있는다.?flockfile()가 반환하고 나면 호출한 스레드가 파일을 소유하게 된다.
+floor	math.h	double floor(double x);	바닥 함수. 인자값x보다 크지 않은 최대 정수값을 계산 한다. (인자값의 소수점 내림).
+floorf	math.h	float floorf(float x);	바닥 함수. 인자값x보다 크지 않은 최대 정수값을 계산 한다. (인자값의 소수점 내림).
+floorl 	math.h	long double floorl(long double x);	바닥 함수. 인자값x보다 크지 않은 최대 정수값을 계산 한다. (인자값의 소수점 내림).
+fma	math.h	double fma(double x, double y, double z);	부동소수 연산 함수. 이 함수는 다음과 같은 연산을 수행한다. x * y + z
+fmaf	math.h	float fmaf(float x, float y, float z);	부동소수 연산 함수. 이 함수는 다음과 같은 연산을 수행한다. x * y + z
+fmal 	math.h	long double fmal(long double x, long double y, long double z);	부동소수 연산 함수. 이 함수는 다음과 같은 연산을 수행한다. x * y + z
+fmax	math.h	double fmax(double x, double y);	최대값 구하는 함수. x, y 중에 큰것을 반환 한다.
+fmaxf	math.h	float fmaxf(float x, float y);	최대값 구하는 함수. x, y 중에 큰것을 반환 한다.
+fmaxl 	math.h	long double fmaxl(long double x, long double y);	최대값 구하는 함수. x, y 중에 큰것을 반환 한다.
+fmin	math.h	double fmin(double x, double y);	최소값 구하는 함수. x, y 중에 작은것을 반환 한다.
+fminf	math.h	float fminf(float x, float y);	최소값 구하는 함수. x, y 중에 작은것을 반환 한다.
+fminl 	math.h	long double fminl(long double x, long double y);	최소값 구하는 함수. x, y 중에 작은것을 반환 한다.
+fmod	math.h	double fmod(double x, double y);	나머지 수 구하는 함수. 이 함수는 x 를 y 로 나눈 값의 나머지를 구한다. x * y + z
+fmodf	math.h	float fmodf(float x, float y);	나머지 수 구하는 함수. 이 함수는 x 를 y 로 나눈 값의 나머지를 구한다. x * y + z
+fmodl 	math.h	long double fmodl(long double x, long double y);	나머지 수 구하는 함수. 이 함수는 x 를 y 로 나눈 값의 나머지를 구한다. x * y + z
+fopen	stdio.h	FILE *fopen( const char *file, const char *mode);	이 함수는 인자file이 가리키는 경로의 파일을 열고 스트림에 연결한다. 인자?mode는 다음값 중 하나를 갖는 문자열이다. r 또는 rb : 읽기 모드로 파일 열기, w 또는 wb : 쓰기 모드로 파일 열기, a 또는 ab : EOF에서 쓰기모드로 파일 열기, r+ 또는 rb+또는 r+b : 업데이트 할 파일 열기 (읽기 및 쓰기), w+또는 wb+또는 w+b : 업데이트 할 파일 열기, a+ 또는 ab+또는 a+b : EOF에 업데이트 할 파일 열기 (읽기 및 쓰기)
+fpclassify 	math.h	int fpclassify(real-floating x );	실수의 종류를 구분하는 함수. 이 함수는 x 가 어떤 종류의 실수 인지 판별 한다.
+fprintf	stdio.h	int fprintf( FILE *fp, const char *fmt, ...);	fprintf?함수는 지정된 출력 파일 스트림에 문자열을 기록한다. 이 함수는 인자fmt의 문자열을 변환하고, 서식화 하여 출력한다.
+fputc	stdio.h	int fputc( int c, FILE *fp);	이 함수는 c 인자가 지정하는 바이트(unsigned char로 변환된)를?fp가 지정한 출력 스트림에 스트림과 연결된 파일 위치 지시자가 가리키는 위치(정의된 경우)에 기록하고 지시자를 전진시킨다.
+fputs	stdio.h	int fputs( const char *str, FILE *fp);	이 함수는?str이 가리키는 null 종료 문자열을?fp가 가리키는 스트림에 기록한다. null 종료 바이트는 기록되지 않는다.
+fputs 	stdio.h	int puts( const char *str);	이 함수는 str이 가리키는 문자열에 기록하고 표준 출력 스트림 stdout에 개행 문자를 추가한다. Null 종료 바이트는 기록되지 않는다.
+fputwc	wchar.h	wint_t *fputwc( wchar_t wc,  FILE *stream);	스트림에 확장 문자를 쓴다.
+fread	stdio.h	size_t fread( void *buf, size_t size, size_t count, FILE *fp);	이 함수는?fp가 가리키는 스트림으로부터 바이트 단위로 크기가 명시된?size만큼?count의개수까지 데이터를 읽어?buf에 저장한다.
+free	stdlib.h	void free( void *ptr);	할당된 메모리 해제. 이 함수는 ptr이 가리키는 공간의 할당을 해제한다. 만약, ptr 이 null 포인터라면 아무런 작업도 하지 않는다. 다른 상황에서, 인자가 malloc()가 할당하여 반환한 포인터와 일치하지 않거나, free() 또는 realloc()에 의해 할당 해제된 공간이면, 알 수 없는 일이 발생한다.
+freopen	stdio.h	FILE *fopen( const char *file, const char *mode, FILE *fp);	이 함수는 먼저 스트림 비우기(flush)를 시도하고,?fp와 연결된 파일 기술자를 닫는다. 파일을 비우거나 닫지 못할 경우 무시된다. 스트림의 오류 및 EOF 지시자는 지워진다.?freopen함수는?file이 가리키는 경로의 파일을 열고?fp가 가리키는 스트림에 연결한다.?mode인자는?fopen에서와 마찬가지로 사용된다
+frexp	math.h	double frexp(double x, int *exp);	가수, 지수 구하는 함수. 이 함수는 인자값 x을 2진수로 계산하여 지수와 가수를 구한다. 가수는 함수의 반환 값이 되고, 지수는 exp 에 할당된 메모리 공간에 저장된다. 위의 연산결과는 다음과 같은 수식이 성립한다. x = 함수 반환값(가수) * 2^(*exp)
+frexpf	math.h	float frexpf(float x, int *exp);	가수, 지수 구하는 함수. 이 함수는 인자값 x을 2진수로 계산하여 지수와 가수를 구한다. 가수는 함수의 반환 값이 되고, 지수는 exp 에 할당된 메모리 공간에 저장된다. 위의 연산결과는 다음과 같은 수식이 성립한다. x = 함수 반환값(가수) * 3^(*exp)
+frexpl 	math.h	long double frexpl(long double x, int *exp);	가수, 지수 구하는 함수. 이 함수는 인자값 x을 2진수로 계산하여 지수와 가수를 구한다. 가수는 함수의 반환 값이 되고, 지수는 exp 에 할당된 메모리 공간에 저장된다. 위의 연산결과는 다음과 같은 수식이 성립한다. x = 함수 반환값(가수) * 4^(*exp)
+fscanf	stdio.h	int fscanf( FILE *fp, const char *fmt, ...);	fscanf함수는 입력 스트림fp로부터 읽어들여?fmt에 따라 해석하고 결과를 인자에 저장한다.
+fseek	stdio.h	intfseek( FILE *fp, longoffset, intwhence);	이 함수는 fp가 가리키는 스트림에 대한 파일 위치 지시자를 설정한다.
+fsetpos	stdio.h	intfsetpos( FILE *stream, const fpos_t *pos);	fsetpos함수는 stream이 가리키는 스트림의 파일 위치와 상태 지시자를 새롭게 변경한다. 이 함수에서 인자로 전달되는 pos는 반드시 이전에 fgetpos)함수 호출을 통해서 얻은 값이어야 한다.
+ftell	stdio.h	longftell( FILE *fp);	ftell함수는 fp가 가리키는 스트림에 대한 파일 위치 지시자의 현재 값을 가져온다.
+ftrylockfile	stdio.h	int ftrylockfile( FILE *fp);	이 함수는 스트림 오브젝트에 대한 명시적인 애플리케이션 레벨의 잠금 기능을 제공한다. 이 함수는 단위로서 실행될 입력과 출력 시퀀스를 일정한 순서로 배열하는 스레드에서 사용할 수 있는다.?flockfile()가 반환하고 나면 호출한 스레드가 파일을 소유하게 된다.
+funlockfile	stdio.h	void?funlockfile(FILE *fp);	이 함수는 스트림 오브젝트에 대한 명시적인 애플리케이션 레벨의 잠금 기능을 제공한다. 이 함수는 단위로서 실행될 입력과 출력 시퀀스를 일정한 순서로 배열하는 스레드에서 사용할 수 있는다.?flockfile()가 반환하고 나면 호출한 스레드가 파일을 소유하게 된다.
+fwide	wchar.h	wint_t *fwide( FILE *stream,  int mode);	스트림의 너비를 설정한다.
+fwprintf	wchar.h	int fwprintf( FILE *restrict stream,  const wchar_t *restrict format,  ...);	형식이 지정된 데이터를 출력한다.
+fwrite	stdio.h	size_t fwrite( const void *buf, size_t size, size_t count, FILE *fp);	fwrite함수는 buf의 내용을 size에 지정된 크기의 count만큼 fp가 가리키는 스트림에 저장한다. 스트림의 파일 위치 지시자(정의된 경우)는 성공적으로 읽어 들인 바이트 수만큼 전진한다. 오류가 발생할 경우 스트림의 파일 위치 지시자의 결과 값은 불확실하다
+fwscanf	wchar.h	int fwscanf( FILE *restrict stream,  const wchar_t *restrict format,  ...);	형식 데이터를 읽는다.
+getc	stdio.h	int getc( FILE *fp);	fp?인자값이 가리키는 입력스트림에 대한 파일 끝 표시자가 설정되지 않고 다음 바이트가 존재 하면, 이 함수는?unsigned char?형의 문자가?int형으로 바뀐 다음 바이트의 값을 구하고, 스트림이 파일 위치 표시자를 전진 한다(설정되어 있다면).
+getc_unlocked	stdio.h	int getc_unlocked( FILE *fp);	fp?인자값이 가리키는 입력스트림에 대한 파일 끝 표시자가 설정되지 않고 다음 바이트가 존재 하면, 이 함수는?unsigned char?형의 문자가?int형으로 바뀐 다음 바이트의 값을 구하고, 스트림이 파일 위치 표시자를 전진 한다(설정되어 있다면).
+getchar	stdio.h	int getchar( void);	fp?인자값이 가리키는 입력스트림에 대한 파일 끝 표시자가 설정되지 않고 다음 바이트가 존재 하면, 이 함수는?unsigned char?형의 문자가?int형으로 바뀐 다음 바이트의 값을 구하고, 스트림이 파일 위치 표시자를 전진 한다(설정되어 있다면).
+getchar_unlocked	stdio.h	int getchar_unlocked( void);	fp?인자값이 가리키는 입력스트림에 대한 파일 끝 표시자가 설정되지 않고 다음 바이트가 존재 하면, 이 함수는?unsigned char?형의 문자가?int형으로 바뀐 다음 바이트의 값을 구하고, 스트림이 파일 위치 표시자를 전진 한다(설정되어 있다면).
+getenv	stdlib.h	char *getenv( const char *name);	환경 변수로부터 값 획득. 이 함수는 호출하는 프로세스의 환경을 찾는데, 만약 환경 변수 이름이 이미 존재 한다면, 환경 변수의 값 포인터를 반환한다. 만약 명시된 환경변수를 찾을 수 없다면, null 포인터가 반환된다.
+gets	stdio.h	char *gets( char *buf);	gets함수는 표준 입력 스트림 stdin으로부터 줄바꿈(newline)또는 EOF조건을 만날때까지 문자열을 입력받아 buf가 가리키는 버퍼에 저장한다. 버퍼에 마지막 바이트를 읽어들인 후 줄바꿈(newline) 대신 null바이트가 놓이다.
+getwc	wchar.h	wint_t getwc( FILE *stream);	스트림에서 확장 문자 하나를 읽는다.
+getwchar	wchar.h	wint_t getwchar( void);	stdin에서 확장 문자 하나를 읽는다.
+gmtime	time.h	struct tm *gmtime( const time_t *restrict timer);	시간 값을 UTC 시간으로 변환한다. 이 함수는 시스템 시간 값 timer을 UTC 날짜와 시간으로 변환한다.
+gmtime_r	time.h	struct tm *gmtime_r( const time_t *restrict timer,  struct tm *restrict esult);	시간 값을 UTC 시간으로 변환한다. 이 함수는 시스템 시간 값 timer을 UTC 날짜와 시간으로 변환하여 result에 저장한다.
+hypot	math.h	double hypot(double x, double y);	직각삼각형의 빗변 길이를 구하는 함수. 이 함수는 직각 삼각형의 빗변의 길이를 구한다. 다음과 같은 수식과 동일한 값을 구한다. Result = sqrt(pow(x, 2) + pow(y, 2)
+hypotf	math.h	float hypotf(float x, float y);	직각삼각형의 빗변 길이를 구하는 함수. 이 함수는 직각 삼각형의 빗변의 길이를 구한다. 다음과 같은 수식과 동일한 값을 구한다. Result = sqrt(pow(x, 2) + pow(y, 3)
+hypotl 	math.h	long double hypotl(long double x, long double y);	직각삼각형의 빗변 길이를 구하는 함수. 이 함수는 직각 삼각형의 빗변의 길이를 구한다. 다음과 같은 수식과 동일한 값을 구한다. Result = sqrt(pow(x, 2) + pow(y, 4)
+ilogb	math.h	double ilogb(double x);	밑수가 2인 로그 함수. 이 함수는 밑수가 2인 로그 값을 계산 한다.
+ilogbf	math.h	float ilogbf(float x);	밑수가 2인 로그 함수. 이 함수는 밑수가 2인 로그 값을 계산 한다.
+ilogbl 	math.h	long double ilogbl(long double x);	밑수가 2인 로그 함수. 이 함수는 밑수가 2인 로그 값을 계산 한다.
+imaxabs	inttype.h	intmax_t imaxabs(intmax_t i);	정수의 절대 값을 계산한다.
+imaxdiv	inttype.h	imaxdiv_t imaxdiv(intmax_t numer, intmax_t denom);	정수 값의 몫과 나머지를 계산한다.
+initstate	stdlib.h	char *initstate( unsigned seed,  char * state,  size_t size);	의사 난수 함수. 이 함수는 범위가 0 ~ 2^31-1인 의사난수를 반환하고, 배열 크기가 32 long형 정수 기본 상태를 사용하는 비선형 덧셈 피드백 난수 발생기를 사용한다. 이 의사난수 발생기의 주기는 대략 16 x (2^31-1)이다. 상태 배열의 크기는 의사난수 발생기의 주기를 결정한다. 상태 배열 크기의 증가는 주기를 증가시킨다.
+isalnum	ctype.h	int isalnum(int c);	문자가 알파벳 혹은 숫자인지 확인하는 함수
+isalpha	ctype.h	int isalpha(int c);	문자가 알파벳인지 확인하는 함수
+isascii	ctype.h	int isascii(int c); 	문자가 7-bit US-ASCII 문자인지 확인하는 함수
+isblank	ctype.h	int isblank(int c);	문자가 공백문자인지 확인하는 함수
+iscntrl	ctype.h	int iscntrl(int c);	문자가 제어문자 인지 확인하는 함수
+isdigit	ctype.h	int isdigit(int c);	문자가 숫자인지 확인하는 함수
+isfinite	math.h	int isfinite(real-floating x ); 	실수의 유무한, NaN, normal 여부를 판단하는 함수. 인자값 x 가 유한 또는 무한의 수인지 판단한다.
+isgraph	ctype.h	int isgraph(int c);	문자가 그래프 문자인지 확인하는 함수
+isgreater	math.h	int isgreater(real-floating x, real-floating y); 	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+isgreaterequal	math.h	int isgreaterequal(real-floating x, real-floating y); 	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+isinf	math.h	int isinf(real-floating x ); 	실수의 유무한, NaN, normal 여부를 판단하는 함수. 인자값 x 가 유한 또는 무한의 수인지 판단한다.
+isless	math.h	int isless(real-floating x, real-floating y); 	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+islessequal	math.h	int islessequal(real-floating x, real-floating y); 	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+islessgreater	math.h	int islessgreater(real-floating x, real-floating y); 	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+islower	ctype.h	int islower(int c);	문자가 소문자인지 확인하는 함수
+isnan	math.h	int isnan(real-floating x ); 	실수의 유무한, NaN, normal 여부를 판단하는 함수. 인자값 x 가 NaN 인지 여부를 판단한다.
+isnormal	math.h	int isnormal(real-floating x );	실수의 유무한, NaN, normal 여부를 판단하는 함수. 인자값 x 가 normal 인지 여부를 판단한다.
+isprint	ctype.h	int isprint(int c);	문자가 출력 가능한 문자인지 확인하는 함수
+ispunct	ctype.h	int ispunct(int c);	문자가 구두점 문자인지 확인하는 함수
+isspace	ctype.h	int isspace(int c);	문자가 공백문자인지 확인하는 함수
+isunordered	math.h	int isunordered(real-floating x, real-floating y);	실수의 크기 여부를 판단하는 함수. 인자값 x, y 중에 어떤 수가 크고 작고 같은지 크기를 판단한다.
+isupper	ctype.h	int isupper(int c);	문자가 대문자인지 확인하는 함수
+iswalnum	wctype.h	int iswalnum( wint_t wc);	글자와 숫자 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 글자 또는 숫자 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswalpha	wctype.h	int iswalpha( wint_t wc);	글자 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 글자 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswblank	wctype.h	int iswblank( wint_t wc);	공백 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 공백 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswcntrl	wctype.h	int iswcntrl( wint_t wc);	제어 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 제어 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswctype	wctype.h	int iswctype( wint_t wc,  wctype_t charclass);	지정된 종류를 위한 문자 시험. 이 함수는 확장문자 wc가 charclass 문자 종류를 갖고 있는지 아닌지 시험한다. 만약, wc인자가 함수의 도메인내에 있지 않다면, 이 함수의 결과는 알 수 없다.
+iswdigit	wctype.h	int iswdigit( wint_t wc);	10진수 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 숫자 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswgraph	wctype.h	int iswgraph( wint_t wc);	보이는 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 그래프 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswlower	wctype.h	int iswlower( wint_t wc);	소문자 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 소문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswprint	wctype.h	int iswprint( wint_t wc);	출력 가능한 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 출력 가능한 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswpunct	wctype.h	int iswpunct( wint_t wc);	구두점 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 구두점 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswspace	wctype.h	int iswspace( wint_t wc);	여백 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 여백 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswupper	wctype.h	int iswupper( wint_t wc);	대문자 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 대문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+iswxdigit	wctype.h	int iswxdigit( wint_t wc);	16진수 확장문자 코드 시험. 이 함수는 wc가 현재 로케일내의 16진수 문자를 나타내는 확장문자 코드인지 아닌지 시험한다.
+isxdigit	ctype.h	int isxdigit(int c);	문자가 16진수 숫자인지 확인하는 함수
+j0	math.h	double j0(double x); 	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제1종 베셀 함수 이다.
+j1 	math.h	double j1(double x); 	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제1종 베셀 함수 이다.
+jn	math.h	double jn(int n, double x); 	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제1종 베셀 함수 이다.
+kill	signal.h	int?kill(int?tid,?int?sig);	이 함수는 스레드 ID?tid에 시그널 번호?sig를 전달한다. 시그널을 받은 스레드는 등록된 시그널 처리 함수를 호출하거나, 시스템의 기본 동작을 수행한다.
+labs	stdlib.h	long?labs(long?i);	long형 정수의 절대값 반환. 이 함수는 long형 정수의 i의 절대값을 계산한다.
+ldexp	math.h	double ldexp(double x, int exp);	x*2^exp 함수. 
+ldexpf	math.h	float ldexpf(float x, int exp);	x*2^exp 함수. 
+ldexpl 	math.h	long double ldexpl(long double x, int exp);	x*2^exp 함수. 
+ldiv	stdlib.h	ldiv_t ldiv( long numer,  long denom);	long형 정수 나눗셈의 몫과 나머지 연산. 이 함수는 분자 numer를 분모 denom로 나눗셈 하여 몫과 나머지를 구한다. 만약 나눗셈이 정확하지 않다면 그 몫은 대수에 의한 몫보다 작은 long형 정수가 된다.
+lgamma	math.h	double lgamma(double x);	감마 함수의 로그 계산 함수. x의 감마 함수 절대값의 로그를 계산한다.
+lgamma	math.h	double lgamma(double x);	감마 함수를 계산하는 함수. x의 감마 함수를 계산한다.
+lgammaf	math.h	float lgammaf(float x);	감마 함수의 로그 계산 함수. x의 감마 함수 절대값의 로그를 계산한다.
+lgammaf	math.h	float lgammaf(float x);	감마 함수를 계산하는 함수. x의 감마 함수를 계산한다.
+lgammal 	math.h	long double lgammal(long double x);	감마 함수의 로그 계산 함수. x의 감마 함수 절대값의 로그를 계산한다.
+lgammal 	math.h	long double lgammal(long double x);	감마 함수를 계산하는 함수. x의 감마 함수를 계산한다.
+llabs	stdlib.h	long long llabs( long long i);	long long형 정수의 절대값 반환. 이 함수는 long long형 정수의 i의 절대값을 계산한다.
+lldiv	stdlib.h	lldiv_t lldiv( long long numer,  long long denom);	long long형 정수 나눗셈의 몫과 나머지 연산. 이 함수는 분자 numer를 분모 denom로 나눗셈 하여 몫과 나머지를 구한다. 만약 나눗셈이 정확하지 않다면 그 몫은 대수에 의한 몫보다 작은 long 또는 long long형 정수가 된다.
+llrint	math.h	long double llrint(double x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+llrintf	math.h	long double llrintf(float x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+llrintl 	math.h	long double llrintl(long double x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+llround	math.h	long double lllround(double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+llroundf	math.h	long double lllroundf(float x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+llroundl 	math.h	long double lllroundl(long double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+localeconv 	locale.h	struct lconv * localeconv(void);	지역-상세 정보 반환. 현재 로케일의 룰에 따라 숫자와 struct lconv 타입을 이용하여 객체의 구성 요소를 설정 한다.
+localtime	time.h	struct tm *localtime( const time_t *restrict timer);	시간 값을 지역 시간으로 변환한다. 이 함수는 시스템 시간 값 timer을 지역 시간으로 변환한다.
+localtime_r	time.h	struct tm *localtime_r( const time_t *restrict timer,  struct tm *restrict result);	시간 값을 지역 시간으로 변환한다. 이 함수는 시스템 시간 값 timer을 지역 시간으로 변환하여 result에 저장한다.
+log	math.h	double log(double x);	자연로그 함수. x의 자연로그 값을 구한다.
+log10	math.h	double log10(double x);	밑수10 로그 함수. x의 밑수 10인 로그 값을 구한다.
+log10f	math.h	float log10f(float x);	밑수10 로그 함수. x의 밑수 11인 로그 값을 구한다.
+log10l 	math.h	long double log10l(long double x);	밑수10 로그 함수. x의 밑수 12인 로그 값을 구한다.
+log1p	math.h	double log1p(double x);	로그(1+) 함수. log1p함수는 다음의 수식을 계산한다. log( 1 + x )
+log1pf	math.h	float log1pf(float x);	로그(1+) 함수. log1p함수는 다음의 수식을 계산한다. log( 1 + x )
+log1pl 	math.h	long double log1pl(long double x);	로그(1+) 함수. log1p함수는 다음의 수식을 계산한다. log( 1 + x )
+log2	math.h	double log2(double x);	밑수 2 로그 함수. 밑수가 2인 로그이다.
+log2f	math.h	float log2f(float x);	밑수 2 로그 함수. 밑수가 3인 로그이다.
+log2l 	math.h	long double log2l(long double x);	밑수 2 로그 함수. 밑수가 4인 로그이다.
+logb	math.h	double logb(double x);	밑수 2인 로그의 정수를 구하는 함수. logb함수는 밑수가 2인 로그값의 정수를 구한다.log2함수와의 차이점은 밑수가 2인 로그값의 결과는 같지만 반환 할때는 정수의 값만 부동 소수점 값 형태로 반환 한다는 것이다.
+logbf	math.h	float logbf(float x);	밑수 2인 로그의 정수를 구하는 함수. logb함수는 밑수가 2인 로그값의 정수를 구한다.log2함수와의 차이점은 밑수가 3인 로그값의 결과는 같지만 반환 할때는 정수의 값만 부동 소수점 값 형태로 반환 한다는 것이다.
+logbl 	math.h	long double logbl(long double x);	밑수 2인 로그의 정수를 구하는 함수. logb함수는 밑수가 2인 로그값의 정수를 구한다.log2함수와의 차이점은 밑수가 4인 로그값의 결과는 같지만 반환 할때는 정수의 값만 부동 소수점 값 형태로 반환 한다는 것이다.
+logf	math.h	float logf(float x);	자연로그 함수. x의 자연로그 값을 구한다.
+logl 	math.h	long double logl(long double x);	자연로그 함수. x의 자연로그 값을 구한다.
+longjmp	setjmp.h	void longjmp(jmp_bufenv, intval);	동일 스레드 내 가장 최근에 호출된 setjmp()에 저장된 환경을 복원한다. 
+lrint	math.h	long int lrint(double x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+lrintf	math.h	long int lrintf(float x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+lrintl 	math.h	long int lrintl(long double x);	실수와 가장 가까운 정수를 구하는 함수. 인자값 x와 가장 가까운 정수를 구합니다.
+lround	math.h	long int lround(double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+lroundf	math.h	long int lroundf(float x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+lroundl 	math.h	long int lroundl(long double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림 한다.
+malloc	stdlib.h	void *malloc( size_t size);	메모리 할당. 이 함수는 size 바이트 만큼 메모리를 할당한다. 할당된 메모리는 초기화되지 않는다.
+mbrlen	wchar.h	size_t?mbrlen(const char *restrict?s,?size_t?n,?mbstate_t *restrict?ps);	확장문자의 길이를 얻는다.
+mbrtowc	wchar.h	size_t mbrtowc( wchar_t *restrict pwc,  const char *restrict s,  size_t n,  mbstate_t *restrict ps);	문자를 확장문자로 변환한다.
+mbsinit	wchar.h	int mbsinit( const mbstate_t *ps);	확장문자 변환 상태 객체를 초기화한다.
+mbsrtowcs	wchar.h	size_t mbsrtowcs( wchar_t *restrict dst,  const char *restrict src,  size_t len,  mbstate_t *restrict ps);	문자열을 확장문자열로 변환한다.
+memccpy	string.h	void * memccpy( void *restrict s1,  const void *restrict s2,  int c,  size_t n);	문자를 찾을 때까지 메모리 블록 복사. memccpy() 함수는 메모리 영역 s2 에서 s1으로 byte 단위의 길이로 문자c가 발견되거나, n bytes가 복사 될 때까지 복사한다. 영역이 겹치는 오브젝트 사이의 복사는 그 결과는 정의되어있지 않다.
+memchr	string.h	void * memchr( const void * s,  int c,  size_t n);	메모리 블록에서 특정 문자 검색. memchr() 함수는 포인터 s가 가리키는 메모리 영역에서 인자 c (unsigned char로 해석)를 n 바이트 (unsigned char로 해석) 길이 안에서 조사한다. 인자 c (부호 없는 문자로 해석됨)와 일치하는 첫 번째 바이트에서 동작을 멈춘다.
+memcmp	string.h	int memcmp( const void * s1,  const void * s2,  size_tn);	두 개의 메모리 블록내 바이트를 비교. memcmp() 함수는 s1이 가리키는 메모리 (각각 unsigned char로 해석됨)를 s2가 가리키는 메모리와 인자 n 바이트 크기만큼 비교한다.
+memcpy	string.h	void * memcpy( void * restrict s1,  const void * restrict s2,  size_t n);	메모리내 바이트 복사. memcpy() 함수는 copies n 바이트를 s2 포인터가 가리키는 위치에서 s1가 가리키는 위치로 복사한다. 겹치는 오브젝트 사이 복사가 이루어질 경우, 이에 대한 동작은 정의되지 않았다
+memmove	string.h	void * memmove( void * s1,  const void * s2,  size_t n);	한 위치에서 다른 위치로 바이트 복사. memmove() 함수는 n 바이트 길이만큼 포인터 s2가 가리키는 오브젝트에서 포인터 s1가 기리키는 오브젝트로 복사한다. 메모리 영역은 겹칠 수 있는다
+memset	string.h	void * memset( void * s,  int c,  size_t n);	메모리 블록 설정. memset() 함수는 c를 n 바이트만큼 오브젝트 s에 복사한다.
+mkstemp	stdlib.h	int mkstemp( char *template);	시스템 내의 중복되지 않는 파일를 생성한다. 이 함수는 인자 template의 파일 페턴을 고유 파일 이름으로 변환하고 파일을 읽기/쓰기로 생성하고 생성된 파일 기술자를 반환한다. 파일 이름 패턴의 문자열 template은 파일 이름과 여섯 개의 'X'로 끝나는 문자열로 표현된다. 이 함수는 'X'를 파일 이름으로 변환하여 파일을 생성한다.
+mktime	time.h	time_t mktime( struct tm *timeptr);	날짜와 시간을 초단위 시간으로 변환한다. 이 함수는 날짜와 시간 값을 초단위의 시간으로 변환한다.
+modf	math.h	double modf(double x, double *y);	실수 값에서 정수부와 소수부를 구하는 함수. 인자 x의 값을 정수부와 소수부로 분할 한다.
+modff	math.h	float modff(float x, float *y);	실수 값에서 정수부와 소수부를 구하는 함수. 인자 x의 값을 정수부와 소수부로 분할 한다.
+modfl 	math.h	long double modfl(long double x, long double *y);	실수 값에서 정수부와 소수부를 구하는 함수. 인자 x의 값을 정수부와 소수부로 분할 한다.
+nan	math.h	double nan(const char *tagp ); 	NaN을 반환 하는 함수.
+nanf	math.h	float nanf(const char *tagp ); 	NaN을 반환 하는 함수.
+nanl 	math.h	long double nanl(const char *tagp );	NaN을 반환 하는 함수.
+nanosleep	time.h	int nanosleep( const struct timespec *rqtp,  struct timespec *rmtp);	고해상도 수행을 대기 한다. 이 함수는 호출한 스레드의 수행을 요청된 시간 rqtp이 경과되거나, 시그널을 수신할 때까지 수행을 정지 시킨다. 수행 정지 시간은 요청된 시간보다 길 수 있다.
+nearbyint	math.h	double nearbyint(double x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+nearbyintf	math.h	float nearbyintf(float x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+nearbyintl 	math.h	long double nearbyintl(long double x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+nextafter	math.h	double nextafter(doublex, double y); 	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+nextafterf	math.h	float nextafterf(float x, float y); 	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+nextafterl	math.h	long double nextafterl(long double x, long double y); 	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+nexttoward	math.h	double nexttoward(double x, long double y); 	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+nexttowardf	math.h	float nexttowardf(float x, long double y); 	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+nexttowardl	math.h	long double nexttowardl(long double x, long double y);	크기 비교 함수. x 가 y 보다 크면 실수로 표현되는 수 중에 x 보다 바로 작은 실수를 구한다. x 가 y 보다 작으면 실수로 표현되는 수 중에 x 보다 바로 큰 실수를 구한다.
+perror	stdio.h	int perror( const char *s);	이 함수는 언어 종속적인 에러 메시지를 위한 errno 심볼을 통해 에러 번호의 접근을 보여준다.
+posix_memalign	stdlib.h	int posix_memalign( void **memptr,  size_t alignment,  size_t size);	정렬된 메모리 할당. 이 함수는 요청된 size 바이트를 alignment에 정렬된 상태의 메모리를 할당하여 반환한다. 할당된 메모리는 memptr으로 반환된다.
+pow	math.h	double pow(double x, double y);	지수 계산 함수. x 의 y 승 을 구한다.
+powf	math.h	float powf(float x, float y);	지수 계산 함수. x 의 y 승 을 구한다.
+powl 	math.h	long double powl(long double x, long double y);	지수 계산 함수. x 의 y 승 을 구한다.
+pthread_kill	signal.h	int pthread_kill( pthread_t thread, int sig);	이 함수는 스레드 ID thread에 시그널 번호 sig를 전달한다. 시그널을 받은 스레드는 등록된 시그널 처리 함수를 호출하거나, 시스템의 기본 동작을 수행한다.
+putc	stdio.h	int putc( int c, FILE *fp);	이 함수는 c 인자가 지정하는 바이트(unsigned char로 변환된)를?fp가 지정한 출력 스트림에 스트림과 연결된 파일 위치 지시자가 가리키는 위치(정의된 경우)에 기록하고 지시자를 전진시킨다.
+putc_unlocked 	stdio.h	int putc_unlock( int c, FILE *fp);	putc함수는 매크로로 실행되는 경우를 제외하고 하나 이상의 스트림을 평가할 수 있으므로 인자는 사이드 이펙트가 있는 수식이 되어서는 안 된다.
+putchar	stdio.h	int putchar( int c);	이 함수는 c 인자가 지정하는 바이트(unsigned char로 변환된)를?fp가 지정한 출력 스트림에 스트림과 연결된 파일 위치 지시자가 가리키는 위치(정의된 경우)에 기록하고 지시자를 전진시킨다.
+putchar_unlocked 	stdio.h	int putchar_unlocked( int c);	이 함수는 c 인자가 지정하는 바이트(unsigned char로 변환된)를?fp가 지정한 출력 스트림에 스트림과 연결된 파일 위치 지시자가 가리키는 위치(정의된 경우)에 기록하고 지시자를 전진시킨다.
+putenv	stdlib.h	int putenv( char *string);	환경변수에 값 추가 및 변경. 이 함수는 string 인자를 사용하여 환경변수 값을 설정한다. string 인자는 name = value형태의 문자열을 가리켜야 한다. 환경변수의 이름이 없는 경우 환경변수를 추가하고 이미 존재하는 경우에는 값을 변경한다.
+putwc	wchar.h	wint_t putwchar( wchar_t wc);	확장문자 하나를 스트림에 출력한다.
+putwchar	wchar.h	wint_t putwchar( wchar_t wc);	확장문자를 stdout으로 출력한다.
+qsort	stdlib.h	void qsort( void * base,  size_t nel,  size_t width,  int( * compar) (constvoid *,  const void * ));	데이터 분류. 이 함수는 nel 오브젝트 배열을 분류하는데 base는 이 배열의 첫 번째 원소를 가리킨다. 각 오브젝트의 바이트 단위 크기는 with에 의해 지정된다. 만약 nel 인자가 0이라면, compar가 가리키는 비교 함수는 호출되지 않을것이다.배열의 내용은 비교 함수에 따라 오름차순으로 분류된다. compar 는 비교 함수에 대한 포인터이다. 비교 함수는 비교 중인 요소를 가리키는 두 개의 인자를 사용하여 호출한다. 응용프로그램은 첫 번째 인자 두 번째 인자보다 작거나, 같거나, 크다고 간주되는 경우 각각 ‘0’보다 작거나, 같거나, 큰 정수를 반환하는것을 보증 한다. 두 개의 멤버가 동등할지라도 배열내 순서는 정해지지 않는다.
+raise	signal.h	int raise( int sig);	이 함수는 호출하는 스레드에 시그널 sig를 전달한다.
+rand	stdlib.h	int rand( void);	의사 난수 발생기. 이 함수는 최소 2^32 주기동안에 0 ~ RAND_MAX 범위내의 의사난수 정수의 시퀀스를 산출한다.
+random	stdlib.h	long random( void);	의사 난수 함수. 이 함수는 범위가 0 ~ 2^31-1인 의사난수를 반환하고, 배열 크기가 32 long형 정수 기본 상태를 사용하는 비선형 덧셈 피드백 난수 발생기를 사용한다. 이 의사난수 발생기의 주기는 대략 16 x (2^31-1)이다. 상태 배열의 크기는 의사난수 발생기의 주기를 결정한다. 상태 배열 크기의 증가는 주기를 증가시킨다.
+realloc	stdlib.h	void *realloc( void * ptr,  size_t size);	메모리 재할당. 이 함수는 ptr이 가리키는 객체의 메모리를 해제하고, size 가 지정한 크기를 갖는 새 객체를 할당하고 그 포인터를 반환한다.새 객체의 내용은 이전에 해제된 객체와 동일하다. 이전 객체의 사이즈를 넘은 새 객체의 어떠한 바이트도 확실하지 않은 값을 갖고 있다. 만약 공간 할당이 되지 않다면, 그 객체는 변경되지 않고 유지된다.
+remainder	math.h	double remainder(double x, double y);	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+remainderf	math.h	float remainderf(float x, float y);	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+remainderl 	math.h	long double remainderl(long double x, long double y);	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+remove 	stdio.h	int remove( const char *file);	이 함수는 file가 가리키는 파일에 더이상 파일 이름으로 접근 하지 못하도록 한다. 이후에 그 이름의 파일을 새로 만들지 않는 한, 그 이름의 파일을 열려고 시도 하면 실패 한다.
+remquo	math.h	double remquo(double x, double y, int *quo); 	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+remquof	math.h	float remquof(float x, float y, int *quo); 	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+remquol 	math.h	long double remquol(long double x, long double y, int *quo);	나머지 구하는 함수. x의 값을 y로 나눈 값의 나머지를 구한다.
+rename 	stdio.h	int rename( const char *from, const char *to);	rename함수는 파일 이름을 변경한다. from 인자는 변경해야 할 파일의 경로명을 가리킨다. to 인자는 파일의 새로운 경로명을 가리킨다.
+rewind 	stdio.h	intrewind( FILE *fp);	이 함수는 에러 표시자를 초기화 하는것을 제외하고 (void) fseek(stream, 0L, SEEK_SET). 와 동일하게 동작한다.
+rint	math.h	double rint(double x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+rintf	math.h	float rintf(float x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+rintl 	math.h	long double rintl(long double x);	반올림 함수. 인자값 x를 반올림 한 정수를 부동소수점 값 형태로 구한다.
+round	math.h	double round(double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림한 부동 소수점 값을 구한다.
+roundf	math.h	float roundf(float x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림한 부동 소수점 값을 구한다.
+roundl 	math.h	long double roundl(long double x);	반올림 함수. 인자값 x를 가장 가까운 정수로 반올림한 부동 소수점 값을 구한다.
+scalb	math.h	double scalb(double x, int exp);	x*2^exp 함수. 
+scalbf	math.h	float scalbf(float x, int exp);	x*2^exp 함수. 
+scalbl 	math.h	long double scalbl(long double x, int exp);	x*2^exp 함수. 
+setbuf 	stdio.h	void setbuf( FILE *fp, char *buf);	setbuf함수는 주어진 스트림에 대해 프로그램에서 버퍼를 제어하도록 한다.
+setenv	stdlib.h	int setenv( const char *envname,  const char *envval,  int overwrite);	환경변수 추가 및 변경. 이 함수는 호출하는 프로세스의 환경내에 변수를 추가 또는 업데이트 한다. envname 인자는 추가되거나 변경될 환경 변수의 이름을 포함하는 문자열을 가리킨다. 환경 변수는 envval이 가리키는 값으로 설정된다. 이 함수는 envname가 =을 포함하는 문자열을 가리킨다면 실패한다. 만약, 환경 변수가 envname에 의해 이미 존재하는 이름이고, overwrite 의 값은 0이 아니면, 이 함수는 성공을 반환하고, 환경변수는 업데이트 된다. 만약 환경 변수가 envname에 의해 이미 존재하는 이름이고, overwrite 의 값은 0이면, 이 함수는 성공을 반환하고, 환경변수는 변경되지 않는다
+setjmp	setjmp.h	int setjmp(jmp_buf env);	비-지역 탈출을 위한 점프 위치를 설정. longjmp()함수 사용 이후의 호출 환경을 env 인자에 저장한다.
+setlocale 	locale.h	char * setlocale(int category, const char * locale);	카테고리와 locale 인자들에서 명시된 것을 이용하여 글로벌 로케일의 적절한 부분을 선택한다.
+setstate	stdlib.h	char *setstate( char *state);	의사 난수 기능. 이 함수는 상태가 한번 초기화 되면 상태 배열들 사이에서의 전환을 허락한다. state 인자에 의해 정의된 배열은 initstate() 가 호출되어 지거나 setstate()가 다시 호출되어지기 전까지 의사난수 발생을 위해 사용된다.
+setvbuf 	stdio.h	void setvbuf( FILE *fp, char *buf);	setbuf함수는 주어진 스트림에 대해 프로그램에서 버퍼를 제어하도록 한다. 
+sigaction	signal.h	int sigaction( int sig, const struct sigaction *restrict act, struct sigaction *restrict oact);	이 함수는 호출하는 스레드의 시그널 sig의 동작을 변경하고, 이전 동작을 oact에 저장한다.
+sigaddset	signal.h	int sigaddset( sigset_t *set, int signo);	이 함수는 시그널 번호 signo를 시그널 세트 set에 추가한다.
+sigdelset	signal.h	int sigdelset( sigset_t *set, int signo);	이 함수는 시그널 번호 signo를 시그널 세트 set에서 제거한다.
+sigemptyset	signal.h	int sigemptyset( sigset_t *set);	이 함수는 시그널 세트 set를 초기화하여 빈 시그널 세트를 만든다.
+sigfillset	signal.h	int sigfillset( sigset_t *set);	이 함수는 시그널 세트 set를 초기화하여 모든 시그널 번호가 포함되도록한다.
+siggueue	signal.h	int sigqueue( pid_t tid, int signo, const union sigval value);	이 함수는 시그널을 호출한 스레드의 시그널 큐에 추가한다.
+sighold	signal.h	int sighold( int signo);	이 함수는 시그널 번호?signo를 마스킹한다.
+sigignore	signal.h	int?sigignore(int?signo);	이 함수는 시그널 번호?signo의 기본 동작을?SIG_IGN으로 설정한다.
+siginterrupt	signal.h	int siginterrupt( int signo, int flag);	이 함수는 시그널의 재시작 동작 속성을 변경한다.
+sigismember	signal.h	int?sigismember(sigset_t *set,?int?signo);	이 함수는 시그널 세트?set에 시그널 번호?signo이 설정되어 있는지 확인한다.
+siglongjmp	setjmp.h	void siglongjmp(sigjmp_buf env, int val);	시그널 핸들링을 사용한 비-지역 이동. longjmp()와 동일하다.
+signal	signal.h	void?(*signal(int?signum,?void?(*handler)(int)))(int);	시그널 처리 함수를 변경한다.
+sigpause	signal.h	int sigpause( int signo);	이 함수는 호출한 스레드의 시그널 마스크에서 signo를 제거하고, 시그널을 받을 때까지 대기한다. 이 함수에서 반환될 때는 시그널 마스크는 복원된다.
+sigpending	signal.h	int?sigpending(sigset_t *set);	이 함수는 시그널은 수신되었으나 전달이 금지된 시그널 세트를 얻는다.
+sigprocmask	signal.h	int sigprocmask( int how, const sigset_t *restrict set, sigset_t *restrict oset);	이 함수는 호출된 스레드의 시그널 마스크를 조회하거나 변경한다.
+sigrelse	signal.h	int?sigrelse(int?signo);	이 함수는 호출한 스레드의 시그널 마스크에서 시그널 signo를 제거한다.
+sigset	signal.h	void (*sigset(int sig, void (*disp)(int)))(int);	이 함수는 시그널 처리 함수를 변경한다. 인자?disp은 SIG_DFL, SIG_IGN, 혹은 시그널 처리 함수이다.
+sigsetjmp	setjmp.h	int sigsetjmp(sigjmp_buf env, int savemask);	비-지역 이동을 위한 점프 위치 설정. setjmp()와 동일하다.
+sigsuspend	signal.h	int sigsuspend( const sigset_t *sigmask);	이 함수는 호출되는 시그널 마스크를 sigmask으로 변경하고 시그널이 수신될 때까지 대기한다.
+sigtimedwait	signal.h	int?sigtimedwait(const sigset_t *set,?siginfo_t *info,?const struct timespec *timeout);	이 함수는 대기하고 있는 시그널을 set에서 선택하여 수신한다.
+sigwait	signal.h	int sigwait( const sigset_t *restrict set, int *restrict sig);	이 함수는 대기하고 있는 시그널을?set에서 선택하여 수신한다.
+sigwaitinfo	signal.h	int sigwaitinfo( const sigset_t *set, siginfo_t *info);	이 함수는 대기하고 있는 시그널을 set에서 선택하여 수신한다.
+sin	math.h	double sin(double x);	사인 함수. x의 값이 라디안 범위 일때 사인 값을 계산한다.
+sinf	math.h	float sinf(float x);	사인 함수. x의 값이 라디안 범위 일때 사인 값을 계산한다.
+sinh	math.h	double sinh(double x);	쌍곡선 사인 함수. x의 값이 라디안 범위 일때 쌍곡 사인 값을 계산한다.
+sinhf	math.h	float sinhf(float x);	쌍곡선 사인 함수. x의 값이 라디안 범위 일때 쌍곡 사인 값을 계산한다.
+sinhl 	math.h	long double sinhl(long double x);	쌍곡선 사인 함수. x의 값이 라디안 범위 일때 쌍곡 사인 값을 계산한다.
+sinl 	math.h	long double sinl(long double x);	사인 함수. x의 값이 라디안 범위 일때 사인 값을 계산한다.
+sqrt	math.h	double sqrt(double x);	제곱근 계산 함수. x의 양의 제곱근 계산을 한다.
+sqrtf	math.h	float sqrtf(float x);	제곱근 계산 함수. x의 양의 제곱근 계산을 한다.
+sqrtl 	math.h	long double sqrtl(long double x);	제곱근 계산 함수. x의 양의 제곱근 계산을 한다.
+srand	stdlib.h	void srand( unsigned seed);	의사난수 발생기. 이 함수는 뒤이어 호출 되는 rand에 의해 반환될 의사난수의 새로운 시퀀스를 위해 seed 인자를 사용한다. 만약, srand()가 같은 seed로 호출되면 의사난수의 순서는 반복된다.
+srandom	stdlib.h	void srandom( unsigned seed);	의사난수 기능. 이 함수는 범위가 0 ~ 2^31-1인 의사난수를 반환하고, 배열 크기가 32 long형 정수 기본 상태를 사용하는 비선형 덧셈 피드백 난수 발생기를 사용한다. 이 의사난수 발생기의 주기는 대략 16 x (2^31-1)이다. 상태 배열의 크기는 의사난수 발생기의 주기를 결정한다. 상태 배열 크기의 증가는 주기를 증가시킨다.
+strcat	string.h	char * strcat( char * restrict s1,  constchar * restrict s2);	두 문자열 합치기. strcat() 함수는 s1 끝의 NULL 문자를 덮어써서 s1 문자열에 s2 문자열을 추가한 다음 종료 NULL 문자를 추가한다.. 겹치는 오브젝트 사이 복사가 이루어질 경우 결과는 정의되지 않았다.
+strchr	string.h	char * strchr( constchar s,  int c,);	문자열 스캔 연산. strchr() 함수는 문자열 s내에서 문자 c가 처음 나타날 때 c에 대한 포인터를 반환한다. 문자열 끝을 알리는 null 문자도 문자열의 일부로 간주한다.
+strcmp	string.h	int strcmp( constchar * s1,  constchar s2,);	두 문자열 비교. strcmp() 함수는 포인터 s1가 가리키는 문자열과 포인터 s2가 가리키는 문자열을 비교한다. 이 함수는 s1이 s2보다 작거나, 일치하거나, 큰 것으로 나타난 경우 각각 ‘0’보다 작은 정수, '0' 혹은 ‘0’보다 큰 정수를 반환한다.
+strcoll	string.h	int strcoll( constchar * s1,  constchar * s2,);	locale 을 이용하여 두개의 문자열을 비교. 
+strcpy	string.h	char * strcpy( char * restrict s1,  const char * restrict s2);	문자열 복사
+strcspn	string.h	size_t strcspn( constchar * s1,  constchar * s2,);	문자열을 검색하여 첫 번째로 일치하는 문자를 발견하기까지의 문자갯수 가져오기. strcspn() 함수는 포인터 s1이 가리키는 문자열에서 포인터 s2가 가리키는 문자열내에 있는 문자들을 검색하여 처음 일치하는 문자의 위치를 찾는다.
+strdup	string.h	size_t strdup( constchar * s);	문자열 복사. strdup() 함수는 포인터 s가 가리키는 문자열을 복사하고, 복사된 새로운 문자열에 대한 포인터를 반환한다. 반환된 포인터는 free() 함수를 사용하여 영역을 해제한다. 새로운 문자열 생성에 실패할 경우, NULL 포인터를 반환한다.
+strerror	string.h	char * strerror( int errnum);	오류 메시지 문자열 가져오기
+strftime	time.h	size_t strftime( char *restrict s,  size_t maxsize,  const char *restrict format,  const struct tm *restrict timeptr);	시간 값을 포멧을 가지고 문자열로 변환한다. 이 함수는 날짜와 시간 값을 format 포멧으로 변환하여 버퍼 s에 저장한다.
+strlen	string.h	size_t strlen( const char *s);	고정 크기인 문자열의 길이 가져오기
+strncat	string.h	char * strncat( char *restrict s1,  const char *restrict s2,  size_t n);	한 문자열의 일부를 다른 문자열에 합치기. strncat() 함수는 s1가 가리키는 배열의 끝에 s2 가 가리키는 배열을 n바이트 길이 이하로 추가한다. s2의 최초의 바이트는 s1의 끝에 위치한 NULL문자를 덮어쓴다. 두 문자열이 합쳐진 후, 항상 종료 NULL 문자 추가를 문자열의 끝에 추가한다.
+strncmp	string.h	int strncmp( const char * s1,  const char *s2,  size_t n);	두 문자열의 일부 비교하기. strncmp() 함수는 s1이 가리키는 배열의 n 바이트 이하(Null 바이트 이후의 바이트는 비교하지 않음)를 s2 가 가리키는 배열과 비교한다.
+strncpy	string.h	char * strncpy( char * restrict s1,  const char * restrict s2,  size_t n);	특정 바이트 길이의 문자열 복사
+strpbrk	string.h	char * strpbrk( const char * s1,  const char * s2);	문자열내에서 특정 문자 찾기. strpbrk() 함수는 포인터 s1가 가리키는 문자열에서 포인터 s2에 들어있는 문자들을 검색하여 포인터 s2에 들어있는 문자가 처음 발견되는 위치를 반환한다.
+strptime	time.h	char *strptime( char *restrict s,  const char *restrict format,  struct tm *tm);	날짜와 시간을 변환한다. 이 함수는 문자열을 format 포멧으로 변환하여 버퍼 tm에 저장한다.
+strrchr	string.h	char * strrchr( const char * s,  int c);	문자열에서 검색하는 문자의 마지막 위치 찾기. strrchr() 함수는 문자열 s내에서 문자 c를 찾는데, 마지막으로 나타나는 위치에 대한 포인터를 반환한다. 종료 NULL 문자도 문자열의 일부분으로 간주한다.
+strspn	string.h	size_t strspn( const char *s1,  const char *s2);	문자열을 포함하고 있는 처음 부분의 길이 가져오기. strspn() 함수는 포인터 s2가 가리키는 문자열의 문자로만 구성되는 문자열을 포인터 s1이 가리키는 문자열의 처음에서부터 찾아 그 문자들만을 포함하는 곳까지의 길이를 반환한다.
+strstr	string.h	char * strstr( const char * s1, const char * s2);	문자열을 검색 한다.
+strtof	stdlib.h	float strtof( const char *restrict nptr,  char **restrict endptr);	문자열을 배정밀도의 수로 변환. 
+strtoimax	inttype.h	intmax_t strtoimax(const char *restrict s, char **restrict endptr, int base);	문자열을 부호있는 정수로 변환한다.
+strtok	string.h	char * strtok( const char * restrict s1,  const char * restrict s2);	문자열을 토큰으로 분할.
+strtol	stdlib.h	long strtol( const char *restrict str,  char **restrict endptr,  int base);	문자열을 long형 정수로 변환. 이 함수는 str가 가리키는 문자열을 long형으로 변환한다.
+strtold	stdlib.h	long double strtold( const char *restrict nptr,  char **restrict endptr);	문자열을 배정밀도의 수로 변환. 이 함수는 nptr가 가리키는 문자열의 처음 부분을 long double형으로 변환한다.
+strtoll	stdlib.h	long long strtoll( const char *restrict str,  char **restrict endptr,  int base);	문자열을 long형 정수로 변환. 이 함수는 str가 가리키는 문자열의 처음 부분을 long long형으로 변환한다.
+strtoul	stdlib.h	unsigned long strtoul( const char *restrict str,  char **restrict endptr,  int base);	문자열을 unsigned long 타입으로 변환. 이 함수는 str가 가리키는 문자열의 처음 부분을 unsigned long형으로 변환한다.
+strtoull	stdlib.h	unsigned long long strtoull( const char *restrict str,  char **restrict ndptr,  int base);	문자열을 unsigned long 타입으로 변환. 이 함수는 str가 가리키는 문자열의 처음 부분을 unsigned long long형으로 변환한다.
+strtoumax	inttype.h	uintmax_t strtoumax(const char *restrict s, char **restrict endptr, int base);	문자열을 부호 없는 정수로 변환한다.
+strxfrm	string.h	size_t strxfrm( char * restricts1,  const char * restricts2,  size_t n);	로케일을 사용하여 문자열을 변환한다.
+swprintf	wchar.h	int swprintf( wchar_t *restrict ws,  size_t n,  wchar_t *restrict format,  ...);	문자열에 형식이 지정된 데이터를 쓴다.
+swscanf	wchar.h	int swscanf( const wchar_t *restrict ws,  const wchar_t *restrict format,  ...);	문자열에서 형식 데이터를 읽는다.
+tan	math.h	double tan(double x);	탄젠트 함수. x의 값이 라디안 범위 일때 탄젠트 값을 계산한다.
+tanf	math.h	float tanf(float x);	탄젠트 함수. x의 값이 라디안 범위 일때 탄젠트 값을 계산한다.
+tanh	math.h	double tanh(double x);	쌍곡선 탄젠트 함수. x의 값이 라디안 범위 일때 쌍곡선 탄젠트 값을 계산한다.
+tanhf	math.h	float tanhf(float x);	쌍곡선 탄젠트 함수. x의 값이 라디안 범위 일때 쌍곡선 탄젠트 값을 계산한다.
+tanhl 	math.h	long double tanhl(long double x);	쌍곡선 탄젠트 함수. x의 값이 라디안 범위 일때 쌍곡선 탄젠트 값을 계산한다.
+tanl 	math.h	long double tanl(long double x);	탄젠트 함수. x의 값이 라디안 범위 일때 탄젠트 값을 계산한다.
+tempnam 	stdio.h	int tempnam( const char *dir, const char *pfx);	이 함수는 임시 파일에 사용될 경로이름을 생성한다. 이 함수는 사용자가 디렉터리를 선택하도록 해줍니다.
+time	time.h	time_t time( time *tloc);	시간 값을 얻는다. 이 함수는 현재 시간 값을 반환한다.
+timer_create	time.h	int timer_create( clockid_t clockid,  struct sigevent *restrict evp,  timer_t *restrict timerid);	프로세스의 타이머를 생성한다. 이 함수는 지정한 클록을 사용하여 타이머를 생성한다. 생성된 타이머는 timerid에 저장한다.
+timer_delete	time.h	int timer_delete( timer_t timerid);	타이머를 삭제한다. 이 함수는 timer_create() 함수가 생성한 타이머를 제거한다. 만약 타이머 timerid가 동작 중이라면, 타이머를 정지시키고 제거한다.
+timer_getoverrun	time.h	int timer_getoverrun( timer_t timerid);	오버런 값을 반환한다. 타이머 경과 시그널을 수신하였을 때, 이 함수는 타이머 만료 오버런 값을 반환한다.
+timer_gettime	time.h	int timer_gettime( timer_t timerid,  struct itimerspec *value);	남아있는 시간을 반환한다. 이 함수는 타이머의 남아있는 시간을 얻어 value에 저장한다.
+timer_settime	time.h	int timer_settime( timer_t timerid,  int flags,  struct itimerspec *value,  struct itimerspec *ovalue);	타이머의 만료 시간을 설정한다. 이 함수는 타이머 timerid의 만료 시간을 설정한다.
+tmpfile 	stdio.h	FILE *tmpfile( void);	이 함수는 임시 파일을 생성하고 이 파일의 스트림을 엽니다. 이 파일의 모든 참조들이 이 파일을 닫을 때 자동으로 삭제 된다. 이 파일은 fopen() (w+) 에 의해 열린다.
+toascii	ctype.h	int toascii(int c); 	정수 값을 7비트 ASCII 문자로 변환하는 함수
+tolower	ctype.h	int tolower(int c);	대문자를 소문자로 변환하는 함수
+toupper	ctype.h	int toupper(int c);	소문자를 대문자로 변환하는 함수
+towctrans	wctype.h	int towctrans( wint_t wc,  wctrans_t desc);	확장문자 변환. 이 함수는 desc로부터 서술된 매핑을 사용하여 확장문자 wc를 변한다.
+towlower	wctype.h	int towlower( wint_t wc);	대문자 확장문자 코드를 소문자로 변경. 이 함수의 인자가 대문자 확장문자 코드이고, 일부 소문자가 존재하면, 대문자는 소문자로 변경되고 소문자는 변경없이 처리된다.
+towupper	wctype.h	int towupper( wint_t wc);	소문자 확장문자 코드를 대문자로 변경. 이 함수의 인자가 소문자 확장문자 코드이고, 일부 대문자가 존재하면, 소문자는 대문자로 변경되고 대문자는 변경 없이 처리된다.
+trunc	math.h	double trunc(double x);	소수점 이하 버림 함수. x의 소수점 이하 수를 버리고 정수값만 구한다.
+truncf	math.h	float truncf(float x);	소수점 이하 버림 함수. x의 소수점 이하 수를 버리고 정수값만 구한다.
+truncl 	math.h	long double truncl(long double x);	소수점 이하 버림 함수. x의 소수점 이하 수를 버리고 정수값만 구한다.
+ungetc 	stdio.h	int ungetc( int c, FILE *stream);	ungetc함수는 부호없는 문자 c를 지정된 입력 stream에 다시 푸쉬한다. 그러나 연속 문자만 ungetc을 연속해서 호출한 경우 입력 스트림에 다시 푸쉬하도록 보장된다.
+ungetwc	wchar.h	wint_t ungetwc( wint_t wc,  FILE *stream);	스트림에 확장문자를 다시 넣는다.
+unsetenv	stdlib.h	int unsetenv( const char * name);	환경변수 제거. 이 함수는 호출 프로세스의 환경으로부터 환경 변수를 제거한다. 문자열을 가리키는 name 인자는 제거되기 위한 환경 변수의 이름이다. 그 인자는 '='문자를 포함하지 않는다. 만약, 그 이름 변수가 현재 환경에 존재하지 않으면 환경 변수는 변경되지 않으며 이 함수는 성공적으로 완료된것으로 간주한다.
+va_arg	stdarg.h	type va_arg(va_list ap, type);	va_arg()를 호출하기 전에 인자?ap를 초기화하기 위해 사용된다.
+va_copy	stdarg.h	void va_copy(va_list dest, va_list src);	dest를?src의 복사본으로 초기화한다.
+va_end	stdarg.h	void va_end(va_list ap);	ap에서 다음 인자를 얻는다.
+va_start	stdarg.h	void va_start(va_list ap, parmN);	ap를 무효화하는데 사용한다.
+vfprintf 	stdio.h	int vfprintf( FILE *stream, const char *format, va_list ap);	fprintf?함수는 지정된 출력 파일 스트림에 문자열을 기록한다. 이 함수는 인자fmt의 문자열을 변환하고, 서식화 하여 출력한다.
+vfscanf 	stdio.h	int vfscanf( FILE *fp, const char *fmt0, va_list ap);	이 함수는?fscanf()?와 매개 변수의 차이점 외에는 동일하게 동작한다. 이 함수는?va_end매크로를 사용하지 않는다.
+vfwprintf	wchar.h	int vfwprintf( FILE *restrict stream,  const wchar_t *restrict format,  va_list arg);	형식이 지정된 데이터를 출력한다.
+vfwscanf	wchar.h	int vfwscanf( FILE *restrict vfwscanf,  const wchar_t *restrict format,  va_list arg);	형식 데이터를 읽는다.
+vswprintf	wchar.h	int vswprintf( const wchar_t *restrict format,  va_list arg);	형식이 지정된 데이터를 출력한다.
+vswscanf	wchar.h	int?vswscanf(const wchar_t *restrict?format,?va_list?arg);	형식 데이터를 읽는다.
+vswscanf	wchar.h	int vwscanf( const wchar_t *restrict format,  va_list arg);	형식 데이터를 읽는다.
+vwprintf	wchar.h	int vwprintf( const wchar_t *restrict format,  va_list arg);	형식이 지정된 데이터를 출력한다.
+wcrtomb	wchar.h	size_t wcrtomb( char *restrict s,  wchar_t wc,  mbstate_t *restrict ps);	확장문자를 문자로 변환한다.
+wcscat	wchar.h	wchar_t *wcscat( wchar_t *restrict ws1,  const wchar_t *restrict ws2);	확장문자열을 추가한다.
+wcschr	wchar.h	wchar_t *wcschr( wchar_t *ws,  wchar_t wc);	확장문자열에서 확장문자를 찾는다.
+wcscmp	wchar.h	int *wcsncmp( const wchar_t *ws1,  const wchar_t ws2,  size_t n);	두 확장문자를 비교한다.
+wcscoll	wchar.h	int *wcscoll( const wchar_t *ws1,  const wchar_t ws2);	두 확장문자열을 비교한다.
+wcscpy	wchar.h	wchar_t *wcscpy( const wchar_t *ws1,  const wchar_t ws2);	확장 문자열을 복사한다.
+wcscspn	wchar.h	int *wcscspn( const wchar_t *ws1,  const wchar_t ws2);	문자열에서 부분 문자열의 위치를 찾는다.
+wcsftime	wchar.h	size_t wcsftime( wchar_t *restrict wcs,  size_t maxsize,  const wchar_t *restrict format,  const struct tm *restrict timeptr);	날짜와 시간을 확장 문자열로 변환한다.
+wcslen	wchar.h	size_t wcslen( const wchar_t *ws);	확장문자열의 길이를 얻는다.
+wcsncat	wchar.h	wchar_t *wcsncat( wchar_t *restrict ws1,  const wchar_t *restrict ws2,  size_t n);	확장문자열을 추가한다.
+wcsncmp	wchar.h	int *wcsncmp( const wchar_t *ws1,  const wchar_t ws2,  size_t n);	두 확장문자를 비교한다.
+wcsncpy	wchar.h	int *wcsncpy( const wchar_t *ws1,  const wchar_t ws2,  size_t n);	확장 문자열을 복사한다.
+wcspbrk	wchar.h	wchar_t *wcspbrk( const wchar_t *ws1,  const wchar_t ws2);	확장 문자열에서 확장 문자를 찾는다.
+wcsrchr	wchar.h	wchar_t *wcschr( wchar_t *ws,  wchar_t wc);	확장문자열에서 확장문자를 찾는다.
+wcsrtombs	wchar.h	size_t wcsrtombs( char *restrict s,  wchar_t wc,  mbstate_t *restrict ps);	확장문자를 문자로 변환한다.
+wcsspn	wchar.h	size_t *wcsspn( const wchar_t *ws1,  const wchar_t ws2);	문자열에서 일치하지 않는 첫 문자 위치를 찾는다.
+wcsstr	wchar.h	wchar_t *wcsstr( const wchar_t *ws1,  const wchar_t ws2);	부분 확장 문자열을 찾는다.
+wcstod	wchar.h	double wcstod( const wchar_t *restrict nptr,  const wchar_t *restrict endptr);	확장 문자열을 double형으로 수로 변환한다.
+wcstod	wchar.h	float wcstof( const wchar_t *restrict nptr,  const wchar_t *restrict endptr);	확장 문자열을 float형으로 수로 변환한다.
+wcstoimax 	inttype.h	intmax_t wcstoimax(const wchar_t *restrict s, wchar_t **restrict endptr, int base);	확장 문자열을 부호 있는 정수로 변환한다.
+wcstok	wchar.h	wchar_t wcstok( wchar_t *restrict ws1,  wchar_t *restrict ws2,  wchar_t **restrict ptr);	확장 문자열에서 문자 토큰을 찾는다.
+wcstol	wchar.h	long wcstol( const wchar_t *restrict nptr,  const wchar_t *restrict endptr,  int base);	확장 문자열을 정수형으로 수로 변환한다.
+wcstold	wchar.h	long double wcstold( const wchar_t *restrict nptr,  const wchar_t *restrict endptr);	확장 문자열을 long double형으로 수로 변환한다.
+wcstoll	wchar.h	long long double wcstoll( const wchar_t *restrict nptr,  const wchar_t *restrict endptr,  int base);	확장 문자열을 long long형으로 수로 변환한다.
+wcstoul	wchar.h	unsigned long wcstoul( const wchar_t *restrict nptr,  const wchar_t *restrict endptr,  int base);	확장 문자열을 부호 없는 정수형으로 수로 변환한다.
+wcstoull	wchar.h	unsigned long long wcstoull( const wchar_t *restrict nptr,  const wchar_t *restrict endptr,  int base);	확장 문자열을 부호 없는 정수형으로 수로 변환한다.
+wcstoumax 	inttype.h	uintmax_t wcstoumax(const wchar_t *restrict s, wchar_t **restrict endptr, int base);	확장 문자열을 부호 없는 정수로 변환한다.
+wcsxfrm	wchar.h	size_t wcsxfrm( wchar_t *restrict ws1,  wchar_t *restrict ws2,  size_t n);	확장 문자열을 변환한다.
+wctrans	wctype.h	wctrans_t wctrans( const char * charclass);	문자 매핑 정의. 이 함수는 현재 로케일의 이름에 매핑되는 유효한 문자를 정의한다. charclass는 요구된 codeset-specific를 위해 이름과 매핑되는 문자 확인용 문자열이다.
+wctype	wctype.h	wctype_t wctype( const char * property);	문자 종류 정의. 이 함수는 유효한 문자 종류를 정의한다. 아래에는 모든 로케일에 정의될 문자 종류들이다.
+wmemchr	wchar.h	wchar_t *wmemchr( const wchar_t *ws,  wchar_t wc,  size_t n);	확장 문자를 한 바이트 문자로 변환한다.
+wmemcmp	wchar.h	int wmemcmp( const wchar_t *ws1,  const wchar_t *ws2,  size_t n);	확장 문자 버퍼를 비교한다.
+wmemcpy	wchar.h	wchar_t *wmemcpy( wchar_t *ws1,  const wchar_t *ws2,  size_t n);	확장 문자 버퍼를 복사한다.
+wmemmove	wchar.h	wchar_t *wmemmove( wchar_t *ws1,  const wchar_t *ws2,  size_t n);	확장 문자 버퍼를 복사한다.
+wmemset	wchar.h	wchar_t wmemmove( wchar_t *ws,  wchar_t wc,  size_t n);	버퍼를 설정한다.
+wprintf	wchar.h	int wprintf( const wchar_t *restrict format,  ...);	형식이 지정된 데이터를 출력한다.
+wscanf	wchar.h	int wscanf( const wchar_t *restrict format,  ...);	형식 데이터를 읽는다.
+y0 	math.h	double y0(double x); 	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제2종 베셀 함수 이다.
+y1	math.h	double y1(double x); 	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제2종 베셀 함수 이다.
+yn	math.h	double yn(int n, double x);	베셀 함수. 일정 유형의 미분 방정식을 계산한다. 제2종 베셀 함수 이다.
